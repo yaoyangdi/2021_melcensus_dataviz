@@ -1,74 +1,82 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Population of Not-citizen Resident of Australia Based on Country of Birth",
-    "width": 800,
-    "height": 400,
-    "data": {
-      "url": "./ne_110m_admin_0_countries.topojson",
-      "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Percentage of Not-citizen Resident of Australia Based on Country of Birth",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/homework_wk9/ne_110m_admin_0_countries.topojson",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "./oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "skyblue"}
     },
-    "projection": {"type": "equalEarth"},
-    "layer": [
-      {
-        "transform": [
-          {
-            "calculate": "'Data is not available in ' + datum.properties.NAME",
-            "as": "note"
-          }
-        ],
-        "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
-        "encoding": {"tooltip": {"field": "note"}}
+    {
+      "data": {
+        "url": "./WorldMapWithGraticules.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
-      {
-        "data": {
-          "url": "./oceans.topojson",
-          "format": {"type": "topojson", "feature": "oceans"}
-        },
-        "mark": {"type": "geoshape", "fill": "skyblue"}
-      },
-      {
-        "data": {
-          "url": "./WorldMapWithGraticules.topojson",
-          "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
-        },
-        "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
-      },
-      {
-        "transform": [
-          {
-            "lookup": "properties.NAME",
-            "from": {
-              "data": {
-                "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/homework_wk9/australian_nonCitizen.CSV/"
-              },
-              "key": "Country",
-              "fields": ["Not_Citizen"]
-            }
-          },
-          {
-            "calculate": "datum.Not_Citizen",
-            "as": "Population of Not Citizen Residensts"
-          }
-        ],
-        
-        "mark": {"type": "geoshape", "stroke": "white"},
-        "encoding": {
-          "color": {
-            "field": "Population of Not Citizen Residents",
-            "type": "quantitative",
-            "scale": {
-              "type": "threshold",
-              "domain": [500, 5000, 50000, 100000],
-              "range": ["#D1DDEE", "#AEC5E4", "#8AAAD8", "#466695","#021D46"]
-            }
-          },
-          "tooltip": [
-            {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-            {"field": "Not_Citizen", "type": "quantitative"}
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+    },
 
-          ]
+    {
+      "transform": [
+        {
+          "calculate": "'Data is not available in ' + datum.properties.NAME",
+          "as": "note"
         }
+      ],
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+      "encoding": {"tooltip": {"field": "note"}}
+    },
+
+
+    {
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "./australian_nonCitizen.CSV",
+              "format": {"type": "csv"}
+            },
+            "key": "Country",
+            "fields": ["Not_Citizen","Citizen","Not_Stated","Total"]
+          }
+        },
+        {
+          "calculate": "datum.Not_Citizen/datum.Total * 100",
+          "as": "non-citizen rate"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white"},
+      "encoding": {
+        "color": {
+          "title": "Non-citizen Rate (Percentage)",
+          "field": "non-citizen rate",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [20, 50, 80],
+            "range": ["#f8ce78", "#fa9d4f", "#f05c4d", "#b71d3e"]
+          }
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+          {"field": "non-citizen rate", "type": "quantitative", "title": "Non-citizen rate (Percentage)", "format": ".2f"
+        },
+          {"field": "Citizen", "type": "quantitative", "title": "Citizen"},
+          {"field": "Not_Citizen", "type": "quantitative", "title": "Not citizen"},
+          {"field": "Not_Stated", "type": "quantitative", "title": "Not stated"},
+          {"field": "Total", "type": "quantitative", "title": "Total"}
+        ]
       }
-    ],
-    "config": {}
-  }
+    }
+  ],
+  "config": {}
+}
