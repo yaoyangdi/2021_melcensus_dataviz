@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Not-citizen Rate of Residents in Australia",
+  "title": "Overseas Distribution of Non-citizen Residents of Australia",
   "width": 800,
   "height": 400,
   "data": {
