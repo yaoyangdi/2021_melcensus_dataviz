@@ -39,7 +39,7 @@
             "lookup": "properties.NAME",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/homework_wk9/australian_nonCitizen.CSV"
+                "url": "./australian_nonCitizen.csv"
               },
               "key": "Country",
               "fields": ["Not_Citizen"]
@@ -59,7 +59,7 @@
             "scale": {
               "type": "threshold",
               "domain": [500, 5000, 50000, 100000],
-              "range":  ["#D1DDEE", "#AEC5E4", "#8AAAD8", "#466695","#021D46"]
+              "range": ["#D1DDEE", "#AEC5E4", "#8AAAD8", "#466695","#021D46"]
             }
           },
           "tooltip": [
