@@ -39,7 +39,7 @@
             "lookup": "properties.NAME",
             "from": {
               "data": {
-                "url": "./australian_nonCitizen.csv"
+                "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/homework_wk9/australian_nonCitizen.CSV/"
               },
               "key": "Country",
               "fields": ["Not_Citizen"]
@@ -47,7 +47,7 @@
           },
           {
             "calculate": "datum.Not_Citizen",
-            "as": "Population of Not Citizen Residents"
+            "as": "Population of Not Citizen Residensts"
           }
         ],
         
