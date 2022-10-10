@@ -1,0 +1,199 @@
+AreaName,Age_Groups,Population,Gender
+Melbourne - Inner,0-4 years,12355,Male
+Melbourne - Inner,5-14 years,21580,Male
+Melbourne - Inner,15-19 years,11202,Male
+Melbourne - Inner,20-24 years,26641,Male
+Melbourne - Inner,25-34 years,80322,Male
+Melbourne - Inner,35-44 years,50981,Male
+Melbourne - Inner,45-54 years,35375,Male
+Melbourne - Inner,55-64 years,28011,Male
+Melbourne - Inner,65-74 years,19248,Male
+Melbourne - Inner,75-84 years,10415,Male
+Melbourne - Inner,85 years and over,3804,Male
+Melbourne - Inner,0-4 years,12015,Female
+Melbourne - Inner,5-14 years,21006,Female
+Melbourne - Inner,15-19 years,12229,Female
+Melbourne - Inner,20-24 years,30675,Female
+Melbourne - Inner,25-34 years,85196,Female
+Melbourne - Inner,35-44 years,50110,Female
+Melbourne - Inner,45-54 years,36623,Female
+Melbourne - Inner,55-64 years,29097,Female
+Melbourne - Inner,65-74 years,21595,Female
+Melbourne - Inner,75-84 years,12443,Female
+Melbourne - Inner,85 years and over,6077,Female
+Melbourne - Inner East,0-4 years,8044,Male
+Melbourne - Inner East,5-14 years,22054,Male
+Melbourne - Inner East,15-19 years,12109,Male
+Melbourne - Inner East,20-24 years,14010,Male
+Melbourne - Inner East,25-34 years,24376,Male
+Melbourne - Inner East,35-44 years,22670,Male
+Melbourne - Inner East,45-54 years,23630,Male
+Melbourne - Inner East,55-64 years,21188,Male
+Melbourne - Inner East,65-74 years,16112,Male
+Melbourne - Inner East,75-84 years,10853,Male
+Melbourne - Inner East,85 years and over,4758,Male
+Melbourne - Inner East,0-4 years,7705,Female
+Melbourne - Inner East,5-14 years,21028,Female
+Melbourne - Inner East,15-19 years,11605,Female
+Melbourne - Inner East,20-24 years,13055,Female
+Melbourne - Inner East,25-34 years,24394,Female
+Melbourne - Inner East,35-44 years,25194,Female
+Melbourne - Inner East,45-54 years,26853,Female
+Melbourne - Inner East,55-64 years,23503,Female
+Melbourne - Inner East,65-74 years,19137,Female
+Melbourne - Inner East,75-84 years,13688,Female
+Melbourne - Inner East,85 years and over,7512,Female
+Melbourne - Inner South,0-4 years,10811,Male
+Melbourne - Inner South,5-14 years,26610,Male
+Melbourne - Inner South,15-19 years,12769,Male
+Melbourne - Inner South,20-24 years,12430,Male
+Melbourne - Inner South,25-34 years,25576,Male
+Melbourne - Inner South,35-44 years,27721,Male
+Melbourne - Inner South,45-54 years,29467,Male
+Melbourne - Inner South,55-64 years,24358,Male
+Melbourne - Inner South,65-74 years,18507,Male
+Melbourne - Inner South,75-84 years,10679,Male
+Melbourne - Inner South,85 years and over,4420,Male
+Melbourne - Inner South,0-4 years,10453,Female
+Melbourne - Inner South,5-14 years,25271,Female
+Melbourne - Inner South,15-19 years,12339,Female
+Melbourne - Inner South,20-24 years,11979,Female
+Melbourne - Inner South,25-34 years,26776,Female
+Melbourne - Inner South,35-44 years,30426,Female
+Melbourne - Inner South,45-54 years,32552,Female
+Melbourne - Inner South,55-64 years,26501,Female
+Melbourne - Inner South,65-74 years,21564,Female
+Melbourne - Inner South,75-84 years,13521,Female
+Melbourne - Inner South,85 years and over,7908,Female
+Melbourne - North East,0-4 years,17800,Male
+Melbourne - North East,5-14 years,35513,Male
+Melbourne - North East,15-19 years,15777,Male
+Melbourne - North East,20-24 years,17366,Male
+Melbourne - North East,25-34 years,39505,Male
+Melbourne - North East,35-44 years,40614,Male
+Melbourne - North East,45-54 years,34656,Male
+Melbourne - North East,55-64 years,28513,Male
+Melbourne - North East,65-74 years,21396,Male
+Melbourne - North East,75-84 years,11676,Male
+Melbourne - North East,85 years and over,4066,Male
+Melbourne - North East,0-4 years,16592,Female
+Melbourne - North East,5-14 years,33583,Female
+Melbourne - North East,15-19 years,14632,Female
+Melbourne - North East,20-24 years,15866,Female
+Melbourne - North East,25-34 years,40405,Female
+Melbourne - North East,35-44 years,41601,Female
+Melbourne - North East,45-54 years,36074,Female
+Melbourne - North East,55-64 years,30997,Female
+Melbourne - North East,65-74 years,23962,Female
+Melbourne - North East,75-84 years,13627,Female
+Melbourne - North East,85 years and over,6438,Female
+Melbourne - North West,0-4 years,15502,Male
+Melbourne - North West,5-14 years,29862,Male
+Melbourne - North West,15-19 years,12944,Male
+Melbourne - North West,20-24 years,14211,Male
+Melbourne - North West,25-34 years,33196,Male
+Melbourne - North West,35-44 years,31808,Male
+Melbourne - North West,45-54 years,25501,Male
+Melbourne - North West,55-64 years,21714,Male
+Melbourne - North West,65-74 years,14669,Male
+Melbourne - North West,75-84 years,8437,Male
+Melbourne - North West,85 years and over,3093,Male
+Melbourne - North West,0-4 years,14588,Female
+Melbourne - North West,5-14 years,28145,Female
+Melbourne - North West,15-19 years,11992,Female
+Melbourne - North West,20-24 years,12776,Female
+Melbourne - North West,25-34 years,33290,Female
+Melbourne - North West,35-44 years,31796,Female
+Melbourne - North West,45-54 years,26741,Female
+Melbourne - North West,55-64 years,22592,Female
+Melbourne - North West,65-74 years,16667,Female
+Melbourne - North West,75-84 years,10075,Female
+Melbourne - North West,85 years and over,4717,Female
+Melbourne - Outer East,0-4 years,14812,Male
+Melbourne - Outer East,5-14 years,32836,Male
+Melbourne - Outer East,15-19 years,16127,Male
+Melbourne - Outer East,20-24 years,15671,Male
+Melbourne - Outer East,25-34 years,31399,Male
+Melbourne - Outer East,35-44 years,34537,Male
+Melbourne - Outer East,45-54 years,34313,Male
+Melbourne - Outer East,55-64 years,31261,Male
+Melbourne - Outer East,65-74 years,24332,Male
+Melbourne - Outer East,75-84 years,13721,Male
+Melbourne - Outer East,85 years and over,4532,Male
+Melbourne - Outer East,0-4 years,14011,Female
+Melbourne - Outer East,5-14 years,30641,Female
+Melbourne - Outer East,15-19 years,14681,Female
+Melbourne - Outer East,20-24 years,14421,Female
+Melbourne - Outer East,25-34 years,32234,Female
+Melbourne - Outer East,35-44 years,36842,Female
+Melbourne - Outer East,45-54 years,36762,Female
+Melbourne - Outer East,55-64 years,33787,Female
+Melbourne - Outer East,65-74 years,27731,Female
+Melbourne - Outer East,75-84 years,16357,Female
+Melbourne - Outer East,85 years and over,7282,Female
+Melbourne - South East,0-4 years,29010,Male
+Melbourne - South East,5-14 years,59004,Male
+Melbourne - South East,15-19 years,26552,Male
+Melbourne - South East,20-24 years,31952,Male
+Melbourne - South East,25-34 years,68929,Male
+Melbourne - South East,35-44 years,64140,Male
+Melbourne - South East,45-54 years,51892,Male
+Melbourne - South East,55-64 years,43062,Male
+Melbourne - South East,65-74 years,30810,Male
+Melbourne - South East,75-84 years,17994,Male
+Melbourne - South East,85 years and over,6328,Male
+Melbourne - South East,0-4 years,27442,Female
+Melbourne - South East,5-14 years,55671,Female
+Melbourne - South East,15-19 years,24988,Female
+Melbourne - South East,20-24 years,28762,Female
+Melbourne - South East,25-34 years,66444,Female
+Melbourne - South East,35-44 years,64012,Female
+Melbourne - South East,45-54 years,53359,Female
+Melbourne - South East,55-64 years,44674,Female
+Melbourne - South East,65-74 years,34490,Female
+Melbourne - South East,75-84 years,20783,Female
+Melbourne - South East,85 years and over,9768,Female
+Melbourne - West,0-4 years,32451,Male
+Melbourne - West,5-14 years,62232,Male
+Melbourne - West,15-19 years,24223,Male
+Melbourne - West,20-24 years,28223,Male
+Melbourne - West,25-34 years,70814,Male
+Melbourne - West,35-44 years,73482,Male
+Melbourne - West,45-54 years,51521,Male
+Melbourne - West,55-64 years,39381,Male
+Melbourne - West,65-74 years,27746,Male
+Melbourne - West,75-84 years,12961,Male
+Melbourne - West,85 years and over,3818,Male
+Melbourne - West,0-4 years,30538,Female
+Melbourne - West,5-14 years,59072,Female
+Melbourne - West,15-19 years,23082,Female
+Melbourne - West,20-24 years,25110,Female
+Melbourne - West,25-34 years,72199,Female
+Melbourne - West,35-44 years,71635,Female
+Melbourne - West,45-54 years,52192,Female
+Melbourne - West,55-64 years,41202,Female
+Melbourne - West,65-74 years,30017,Female
+Melbourne - West,75-84 years,14698,Female
+Melbourne - West,85 years and over,6447,Female
+Mornington Peninsula,0-4 years,8473,Male
+Mornington Peninsula,5-14 years,18907,Male
+Mornington Peninsula,15-19 years,9155,Male
+Mornington Peninsula,20-24 years,7944,Male
+Mornington Peninsula,25-34 years,16476,Male
+Mornington Peninsula,35-44 years,17951,Male
+Mornington Peninsula,45-54 years,19988,Male
+Mornington Peninsula,55-64 years,19136,Male
+Mornington Peninsula,65-74 years,17371,Male
+Mornington Peninsula,75-84 years,10652,Male
+Mornington Peninsula,85 years and over,3666,Male
+Mornington Peninsula,0-4 years,8053,Female
+Mornington Peninsula,5-14 years,17917,Female
+Mornington Peninsula,15-19 years,8283,Female
+Mornington Peninsula,20-24 years,7452,Female
+Mornington Peninsula,25-34 years,17164,Female
+Mornington Peninsula,35-44 years,19583,Female
+Mornington Peninsula,45-54 years,21605,Female
+Mornington Peninsula,55-64 years,20994,Female
+Mornington Peninsula,65-74 years,19666,Female
+Mornington Peninsula,75-84 years,12419,Female
+Mornington Peninsula,85 years and over,5380,Female

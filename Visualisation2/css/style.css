@@ -1,0 +1,47 @@
+
+.container{
+    width: 1000px, 100%;
+    height: 110vh;
+    min-width: 1000px;
+    min-height: 170vh;
+    background-image: url(../img/crowd.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 1000px;
+    height: 100%;
+    
+}
+
+.title {
+    color: rgb(248, 228, 193);
+    text-shadow: 5px 8px 4px #000000;
+    font-size: 1.7em;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+.content{
+    width: 1000px;
+    border-radius: 8px;
+    background: white;
+    height: fit-content;
+
+}
+
+.Population_Age{
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(113, 108, 108);
+    line-height: 80px;
+}
+
+.map{
+    margin-left: 1em; 
+}
