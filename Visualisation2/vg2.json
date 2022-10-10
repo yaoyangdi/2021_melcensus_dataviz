@@ -6,7 +6,8 @@
         "hconcat": [
 
           {
-            "width": 350,
+            "transform": [{"filter": {"param": "select_area_interact"}}],
+            "width": 300,
             "height": 250,
             "title":"Population by gender",
             "data": {
@@ -75,9 +76,9 @@
             ]
           },
           {
-            "transform": [{"filter": {"param": "select"}}],
+            "transform": [{"filter": {"param": "select"}}, {"filter":{"param": "select_area_interact"}}],
             "title":"Population by age groups",
-            "width": 350,
+            "width": 300,
             "height": 250,
             "data": {
               "url": "data/Population_Total_By_Age_Gender.CSV",
@@ -87,13 +88,13 @@
               {
                 "mark": "bar",
                 "encoding": {
-                  "y": {"field": "Age_Groups", "type": "nominal","title":"Age group"},
+                  "y": {"field": "Age_Groups", "type": "ordinal","title":"Age groups"},
                   "x": {"aggregate":"sum", "field":"Population", "type": "quantitative", "title":"Population by gender"},
                   "color": {"field": "Gender"},
                   "tooltip": [
-                    {"field":"Age_Groups", "type": "nominal", "title":"Age group"},
+                    {"field":"Age_Groups", "type": "ordinal", "title":"Age groups"},
                     {"aggregate":"sum","field": "Population", "type": "quantitative", "title": "Population", "format":","},
-                    {"field":"Gender", "type": "nominal", "title":"Gender"}
+                    {"field":"Gender", "type": "nominal", "title":"Gender"} 
                   ]
               }
               },
@@ -121,8 +122,8 @@
         ]
       },
       {
-        "width": 350,
-        "height": 500,
+        "width": 300,
+        "height": 300,
         "data": {
             "url": "data/SA4_2021_AUST_GDA2020.json",
             "format": {        
@@ -154,7 +155,6 @@
               },
               "encoding": {"tooltip": {"field": "note"}}
             },
-
             {
                 "transform": [
                     {
@@ -174,8 +174,15 @@
                     }
                     
                 ],
-                "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5},
+                "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5, "cursor":"pointer"},
+                "params": [
+                  {"name": "select_area", "select":{"type": "point", "fields": ["Population Indensity"]}}
+                ],
                 "encoding": {
+                  "fillOpacity":{
+                    "condition": {"param": "select_area", "value": 1},
+                    "value": 0.2
+                  },
                   "color": {
                     "title":"Population per sqare kilometers",
                     "field": "Population Indensity",
@@ -193,16 +200,42 @@
                     {"field": "Population Indensity", "type": "quantitative", "title": "Population Indensity", "format":".2f"}
                   ]
                 }
+            },
+            {
+              "mark":{"type": "text", "text":"Melbourne CBD areas have", "color": "darkred","dx":-80, "dy":30,"fontSize":13}
+            },
+            {
+              "mark":{"type": "text", "text":"the most dense population", "color": "darkred","dx":-80, "dy":45,"fontSize":13}
+            },
+            {
+              "data":{
+                "url": "data/Population_Total_By_Area.CSV",
+                "format":{ "type": "csv" }
               },
-              {
-                "mark":{"type": "text", "text":"Melbourne CBD areas have", "color": "darkred","dx":-80, "dy":30,"fontSize":13}
-              },
-              {
-                "mark":{"type": "text", "text":"the most dense population", "color": "darkred","dx":-80, "dy":45,"fontSize":13}
-              }
-    
+              "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5},
+              "transform": [
+                  {
+                    "lookup": "AreaName",
+                    "from": {
+                      "data": {
+                        "url": "data/SA4_2021_AUST_GDA2020.json",
+                        "format": {        
+                        "type": "topojson",
+                        "feature": "SA4_2021_AUST_GDA2020"
+                        }
+                    },              
+                      "key": "properties.SA4_NAME21"
+                    },
+                    "as": "geo"
+                  }
+                  
+              ],
+              "params": [
+                {"name": "select_area_interact", "select":{"type": "point", "fields": ["AreaName"]}}
+              ]
+            }
         ]
-    }
+      }
 
 
 
