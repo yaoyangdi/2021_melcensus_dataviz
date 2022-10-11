@@ -59,7 +59,7 @@
                   }
                 ],
 
-                "mark": {"type":"text", "color": "black", "radius": 10},
+                "mark": {"type":"text", "color": "black", "radius": -10},
 
                 "encoding": {
                   "text": {
@@ -99,17 +99,14 @@
                   },
                   {
                     "filter": "datum.Gender == 'Male'"
-                  },
-                  {
-                    "calculate": "population_by_male / population_by_Total *100 ",
-                    "as": "percen111"
                   }
+
                 ],
 
                 "mark": {"type":"text", "color": "white","fontSize":14, "dx":-80, "dy":30},
                 "encoding": {
                   "text":{
-                    "field":"percen111"
+                    "field":"population_by_male"
                   }
                 }
               },
