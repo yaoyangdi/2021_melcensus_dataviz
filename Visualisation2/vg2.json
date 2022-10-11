@@ -49,11 +49,21 @@
                 }
               },
               {
-                "mark": {"type":"text", "color": "black", "radius": -10},
+                "data":{
+                  "url": "data/Population_Total_By_Age_Gender.CSV",
+                  "format":{ "type": "csv" }
+                },
+                "transform": [
+                  {
+                    "aggregate":[{"op": "sum","field": "Population","as": "population_total"}]
+                  }
+                ],
+
+                "mark": {"type":"text", "color": "black", "radius": 10},
 
                 "encoding": {
                   "text": {
-                    "aggregate": "sum", "field": "Population",
+                    "field": "population_total",
                     "format":","
                   }
                 }
@@ -62,10 +72,46 @@
                 "mark": {"type":"text", "color": "black","fontSize":13, "dy":-10, "fontWeight": 100, "text":"Total"}
               },
               {
-                "mark": {"type":"text", "color": "white","fontSize":33, "dx":-80, "fontWeight": "bold", "text":"👦🏻"}
+                "mark": {"type":"text",
+                "color": "white",
+                "fontSize":33, 
+                "dx":-80, 
+                "fontWeight": "bold", 
+                "text":"👦🏻"}
               },
               {
-                "mark": {"type":"text", "color": "white","fontSize":14, "dx":-80, "dy":30, "text":"49%"}
+                
+                "data":{
+                  "url": "data/Population_Total_By_Age_Gender.CSV",
+                  "format":{ "type": "csv" }
+                },
+                "transform": [
+                  {
+                    "window": [{
+                      "op": "sum",
+                      "field": "Population",
+                      "as": "population_by_Total"
+                    }]                
+                  },
+                  {
+                    "aggregate":[{"op": "sum","field": "Population","as": "population_by_male"}],
+                    "groupby": ["Gender"]
+                  },
+                  {
+                    "filter": "datum.Gender == 'Male'"
+                  },
+                  {
+                    "calculate": "population_by_male / population_by_Total *100 ",
+                    "as": "percen111"
+                  }
+                ],
+
+                "mark": {"type":"text", "color": "white","fontSize":14, "dx":-80, "dy":30},
+                "encoding": {
+                  "text":{
+                    "field":"percen111"
+                  }
+                }
               },
               {
                 "mark": {"type":"text", "color": "white","fontSize":33, "dx":80, "fontWeight": "bold", "text":"👩🏻"}
