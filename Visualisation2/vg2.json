@@ -184,7 +184,7 @@
                     "value": 0.2
                   },
                   "color": {
-                    "title":"Population per sqare kilometers",
+                    "title":["Population", "per sqare kilometers"],
                     "field": "Population Indensity",
                     "type": "quantitative",
                     "scale": {
@@ -240,6 +240,13 @@
 
 
     ],
-    "config": {}
+    "config": {
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
+
+    }
   }
   

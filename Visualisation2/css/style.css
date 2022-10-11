@@ -13,6 +13,7 @@ p{
     margin-right: 10px;
     font-family: 'Bitter', serif;
     font-weight: 100;
+    line-height: 20px;
 }
 
 .container{
@@ -49,6 +50,14 @@ p{
 
 }
 
+.Population_Age{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+/* Text decoration */
 .male_text{
     color: orange;
     font-weight: bold;
@@ -59,12 +68,34 @@ p{
     font-weight: bold;
 }
 
-.bold{
+.map_text {
+    position: absolute;
+    width: 425px;
+    left: 700px;
+    top: 760px;
+}
+
+.density_l1{
+    color:#efc571;
     font-weight: bold;
 }
 
-.float {
-    width: 400px;
-    margin-top: -300px;
-    z-index: 99;
+.density_l2{
+    color:#fa9d4f;
+    font-weight: bold;
+}
+
+.density_l3{
+    color:#f05c4d;
+    font-weight: bold;
+}
+
+.density_l4{
+    color:#b71d3e;
+    font-weight: bold;
+}
+
+
+.bold{
+    font-weight: bold;
 }
