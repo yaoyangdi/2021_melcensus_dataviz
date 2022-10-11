@@ -1,11 +1,28 @@
+h2{
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    margin-left: 10px;
+    color: rgb(113, 108, 108);
+    line-height: 80px;
+    margin-bottom: -10px;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Bitter', serif;
+    font-weight: 100;
+}
 
 .container{
-    width: 1000px, 100%;
+    width: 1000px, 100% ;
     height: fit-content;
     min-width: 1000px;
+    max-height: fit-content;
     min-height: 170vh;
-    background-image: url(../img/crowd.jpg);
-    background-size: contain;
+    background-image: url(../img/crowd.jpg); 
+    background-size:contain;
     display: flex;
     justify-content: center;
 }
@@ -13,7 +30,6 @@
 .wrapper{
     width: 1000px;
     height: 100%;
-    
 }
 
 .title {
@@ -33,15 +49,22 @@
 
 }
 
-.Population_Age{
-    width: 100%;
-    font-family: 'Anton', sans-serif;
-    font-size: 20px;
-    margin-left: 10px;
-    color: rgb(113, 108, 108);
-    line-height: 80px;
+.male_text{
+    color: orange;
+    font-weight: bold;
 }
 
-.map{
-    margin-left: 1em; 
+.female_text{
+    color: #4e79a7;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.float {
+    width: 400px;
+    margin-top: -300px;
+    z-index: 99;
 }
