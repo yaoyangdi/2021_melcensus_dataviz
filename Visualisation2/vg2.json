@@ -7,7 +7,7 @@
 
           {
             "transform": [{"filter": {"param": "select_area_interact"}}],
-            "width": 300,
+            "width": 360,
             "height": 250,
             "title":"Population by gender",
             "data": {
@@ -29,7 +29,7 @@
                     "condition": {"param": "select", "value": 1},
                     "value": 0.3
                   },
-                  "theta": {"aggregate":"sum", "field":"Population", "type": "quantitative","stack":true},
+                  "theta": {"aggregate":"sum", "field":"Population", "stack": "normalize"},
                   "color": {"field": "Gender"},
                   "strokeWidth": {
                     "condition": [
@@ -54,6 +54,8 @@
                   "format":{ "type": "csv" }
                 },
                 "transform": [
+                  {"filter": {"param": "select_area_interact"}},
+
                   {
                     "aggregate":[{"op": "sum","field": "Population","as": "population_total"}]
                   }
@@ -86,13 +88,8 @@
                   "format":{ "type": "csv" }
                 },
                 "transform": [
-                  {
-                    "window": [{
-                      "op": "sum",
-                      "field": "Population",
-                      "as": "population_by_Total"
-                    }]                
-                  },
+                  {"filter": {"param": "select_area_interact"}},
+ 
                   {
                     "aggregate":[{"op": "sum","field": "Population","as": "population_by_male"}],
                     "groupby": ["Gender"]
@@ -106,7 +103,8 @@
                 "mark": {"type":"text", "color": "white","fontSize":14, "dx":-80, "dy":30},
                 "encoding": {
                   "text":{
-                    "field":"population_by_male"
+                    "field":"population_by_male",
+                    "format":","
                   }
                 }
               },
@@ -114,14 +112,37 @@
                 "mark": {"type":"text", "color": "white","fontSize":33, "dx":80, "fontWeight": "bold", "text":"👩🏻"}
               },
               {
-                "mark": {"type":"text", "color": "white","fontSize":14, "dx":80, "dy":30, "text":"51%"}
+                
+                "data":{
+                  "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Age_Gender.CSV",
+                  "format":{ "type": "csv" }
+                },
+                "transform": [
+                  {"filter": {"param": "select_area_interact"}},
+                  {
+                    "aggregate":[{"op": "sum","field": "Population","as": "population_by_female"}],
+                    "groupby": ["Gender"]
+                  },
+                  {
+                    "filter": "datum.Gender == 'Female'"
+                  }
+
+                ],
+
+                "mark": {"type":"text", "color": "white","fontSize":14, "dx":80, "dy":30},
+                "encoding": {
+                  "text":{
+                    "field":"population_by_female",
+                    "format":","
+                  }
+                }
               }
             ]
           },
           {
             "transform": [{"filter": {"param": "select"}}, {"filter":{"param": "select_area_interact"}}],
             "title":"Population by age groups",
-            "width": 300,
+            "width": 360,
             "height": 250,
             "data": {
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Age_Gender.CSV",
@@ -165,7 +186,7 @@
         ]
       },
       {
-        "width": 300,
+        "width": 390,
         "height": 300,
         "data": {
             "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/SA4_2021_AUST_GDA2020.json",

@@ -1,15 +1,17 @@
+
 h2{
+
     width: 100%;
     font-family: 'Anton', sans-serif;
     font-size: 40px;
-    margin-left: 10px;
+    margin-left: 20px;
     color: rgb(113, 108, 108);
     line-height: 80px;
     margin-bottom: -10px;
 }
 
 p{
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
     font-family: 'Bitter', serif;
     font-weight: 100;
@@ -17,7 +19,7 @@ p{
 }
 
 .container{
-    width: 1370px;
+    width: 1520px;
     height: 2000px;
     background-image: url(../img/crowd.jpg);
     background-position: center;
@@ -34,14 +36,14 @@ p{
 .title {
     color: rgb(248, 228, 193);
     text-shadow: 5px 8px 4px #000000;
-    font-size: 1.7em;
+    font-size: 28px;
     font-family: 'Anton', sans-serif;
     text-align: center;
 }
 
 .content{
-    margin-left:  50px;
-    width: 900px;
+    margin-top: -50px;
+    width: 1000px;
     border-radius: 8px;
     background: white;
     height: fit-content;
@@ -68,9 +70,9 @@ p{
 
 .map_text {
     position: absolute;
-    width: 425px;
-    left: 700px;
-    top: 760px;
+    width: 440px;
+    left: 800px;
+    top: 685px;
 }
 
 .density_l1{
