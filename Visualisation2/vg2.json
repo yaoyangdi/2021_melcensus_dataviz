@@ -8,7 +8,6 @@
         "anchor": "middle",
         "dy": -1,
         "baseline": "middle",
-        "subtitle": "data from https://acap.pt/",
         "subtitleColor": "navy",
         "subtitleFontSize": 18,
         "subtitlePadding": 5
@@ -16,7 +15,7 @@
       "width": 400,
       "height": 400,
       "data":{
-        "url": "data/top10_CoB.CSV",
+        "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/top10_CoB.CSV",
         "format":{ "type": "csv" }
       },
       "transform": [
@@ -73,7 +72,7 @@
                             "lookup": "Country",
                             "from": {
                                 "data": {
-                                    "url": "data/top10_CoB.CSV",
+                                    "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/top10_CoB.CSV",
                                     "format":{ "type": "csv" }
                                 },
                                 "key": "Country",
