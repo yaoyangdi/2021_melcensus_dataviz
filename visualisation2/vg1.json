@@ -275,7 +275,7 @@
             },
             {
               "data":{
-                "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Area.CSV",
+                "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Area.CSV",
                 "format":{ "type": "csv" }
               },
               "mark": {"type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5},
@@ -284,7 +284,7 @@
                     "lookup": "AreaName",
                     "from": {
                       "data": {
-                        "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/SA4_2021_AUST_GDA2020.json",
+                        "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/SA4_2021_AUST_GDA2020.json",
                         "format": {        
                         "type": "topojson",
                         "feature": "SA4_2021_AUST_GDA2020"
