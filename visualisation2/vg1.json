@@ -11,7 +11,7 @@
             "height": 250,
             "title":"Population by gender",
             "data": {
-              "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Age_Gender.CSV",
+              "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Age_Gender.CSV",
               "format":{ "type": "csv" }
             },
             "layer": [
@@ -52,7 +52,7 @@
               },
               {
                 "data":{
-                  "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Age_Gender.CSV",
+                  "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Age_Gender.CSV",
                   "format":{ "type": "csv" }
                 },
                 "transform": [
@@ -86,7 +86,7 @@
               {
                 
                 "data":{
-                  "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Age_Gender.CSV",
+                  "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Age_Gender.CSV",
                   "format":{ "type": "csv" }
                 },
                 "transform": [
@@ -116,7 +116,7 @@
               {
                 
                 "data":{
-                  "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Age_Gender.CSV",
+                  "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Age_Gender.CSV",
                   "format":{ "type": "csv" }
                 },
                 "transform": [
@@ -147,7 +147,7 @@
             "width": 360,
             "height": 250,
             "data": {
-              "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Age_Gender.CSV",
+              "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Age_Gender.CSV",
               "format":{ "type": "csv"}
             },
             "layer": [
@@ -191,7 +191,7 @@
         "width": 375,
         "height": 300,
         "data": {
-            "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/SA4_2021_AUST_GDA2020.json",
+            "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/SA4_2021_AUST_GDA2020.json",
             "format": {        
             "type": "topojson",
             "feature": "SA4_2021_AUST_GDA2020"
@@ -204,7 +204,7 @@
         "layer": [
             {
               "data": {
-                "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/SA4_2021_AUST_GDA2020.json",
+                "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/SA4_2021_AUST_GDA2020.json",
                 "format": {"type": "topojson", "feature": "SA4_2021_AUST_GDA2020"}
               },
               "transform": [
@@ -227,7 +227,7 @@
                       "lookup": "properties.SA4_NAME21",
                       "from": {
                         "data":{
-                            "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/Population_Total_By_Area.CSV",
+                            "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Area.CSV",
                             "format":{ "type": "csv" }
                         },
                         "key": "AreaName",
