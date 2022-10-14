@@ -19,16 +19,6 @@
         "format":{ "type": "csv" }
       },
       "transform": [
-
-            {
-            "sort": [{"field": "Population","order": "descending"}],
-            "window": [{"op": "rank", "as": "rank"}],
-            "groupby": ["Year"]
-            },
-            {
-                "filter":"datum.rank <= 10"
-            },
-
             {
                 "lookup": "Country",
                 "from": {
@@ -51,7 +41,7 @@
                 ]
             },
             "y": {
-                "field":"rank",
+                "field":"Rank",
                 "type":"quantitative"
             }
         },
