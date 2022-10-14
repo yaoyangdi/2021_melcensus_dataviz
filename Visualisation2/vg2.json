@@ -25,6 +25,9 @@
             "window": [{"op": "rank", "as": "rank"}],
             "groupby": ["Year"]
             },
+            {
+                "filter": "datum.rank <=10"
+            },
 
             {
                 "lookup": "Country",

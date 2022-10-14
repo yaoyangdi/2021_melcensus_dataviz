@@ -7,7 +7,7 @@
 
           {
             "transform": [{"filter": {"param": "select_area_interact"}}],
-            "width": 360,
+            "width": 400,
             "height": 250,
             "title":"Population by gender",
             "data": {
@@ -156,7 +156,7 @@
                 "encoding": {
                   "y": {"field": "Age_Groups", "type": "ordinal","title":"Age groups"},
                   "x": {"aggregate":"sum", "field":"Population", "type": "quantitative", "title":"Population by gender"},
-                  "color": {"field": "Gender"},
+                  "color": {"field": "Gender", "legend":null},
                   "tooltip": [
                     {"field":"Age_Groups", "type": "ordinal", "title":"Age groups"},
                     {"aggregate":"sum","field": "Population", "type": "quantitative", "title": "Population", "format":","},
@@ -188,7 +188,7 @@
         ]
       },
       {
-        "width": 390,
+        "width": 375,
         "height": 300,
         "data": {
             "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/Visualisation2/data/SA4_2021_AUST_GDA2020.json",
