@@ -1,21 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.1.0.json",
     "title": {
-        "text": "Rank of Country of Birth of Oversea residents",
-        "color": "navy",
-        "fontSize": 22,
-        "align": "center",
-        "anchor": "middle",
-        "dy": -1,
-        "baseline": "middle",
-        "subtitleColor": "navy",
-        "subtitleFontSize": 18,
-        "subtitlePadding": 5
+        "text": "Top 10 Countries of Birth of Oversea residents in Melbourne"
       },
-      "width": 400,
-      "height": 400,
+      "width": 380,
+      "height": 320,
       "data":{
-        "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/top10_CoB.CSV",
+        "url": "data/top10_CoB.CSV",
         "format":{ "type": "csv" }
       },
       "transform": [
@@ -38,12 +29,16 @@
                     "2011",
                     "2016",
                     "2021"
-                ]
+                ],
+                "axis":{
+                    "labelAngle": 0
+                }
             },
             "y": {
                 "field":"Rank",
                 "type":"quantitative",
-                "sort":"descending"
+                "sort":"descending",
+                "scale": {"domain": [0.5, 10.5]}
             }
         },
         "layer":[
@@ -54,7 +49,7 @@
                         "fill": "white"
                       }},
                     "encoding": {
-                        "color": {"field": "Country","bandPosition": 0}
+                        "color": {"field": "Country","bandPosition": 0, "legend":null}
                     }
                 },
                 {
@@ -68,7 +63,7 @@
                                     "format":{ "type": "csv" }
                                 },
                                 "key": "Country",
-                                "fields": ["Population"]
+                                "fields": ["Population", "Year"]
                             }
                         }
             
@@ -81,14 +76,18 @@
                             },
                             {
                                 "field":"Population", "type": "quantitative", "format":","
-                            },
-                            {
-                                "field":"rank", "type": "quantitative"
                             }
                         ]
                     }
                     
                 }
-        ]
-      
+        ],
+        "config": {
+            "style": {
+              "cell": {
+                "stroke": "transparent"
+              }
+            }  
+          }
+          
 }
