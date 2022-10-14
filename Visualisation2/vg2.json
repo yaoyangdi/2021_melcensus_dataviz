@@ -21,12 +21,12 @@
       "transform": [
 
             {
-            "sort": [{"field": "Population", "order": "descending"}],
+            "sort": [{"field": "Population","order": "descending"}],
             "window": [{"op": "rank", "as": "rank"}],
             "groupby": ["Year"]
             },
             {
-                "filter": "datum.rank <=10"
+                "filter":"datum.rank <= 10"
             },
 
             {
@@ -52,8 +52,7 @@
             },
             "y": {
                 "field":"rank",
-                "type":"quantitative",
-                "sort": "descending"
+                "type":"quantitative"
             }
         },
         "layer":[
@@ -62,10 +61,9 @@
                     "point": {
                         "filled": false,
                         "fill": "white"
-                      },
-                      "interpolate":"cardinal"},
+                      }},
                     "encoding": {
-                        "color": {"field": "Country"}
+                        "color": {"field": "Country","bandPosition": 0}
                     }
                 },
                 {
@@ -91,7 +89,7 @@
                                 "field":"Country", "type": "nominal"
                             },
                             {
-                                "field":"Population", "type": "quantitative"
+                                "field":"Population", "type": "quantitative", "format":","
                             },
                             {
                                 "field":"rank", "type": "quantitative"

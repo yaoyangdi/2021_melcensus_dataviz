@@ -1,100 +1,31 @@
 Year,Country,Population
-2011,Afghanistan,8934
-2016,Afghanistan,16262
-2021,Afghanistan,23525
-2011,Bangladesh,4818
-2016,Bangladesh,7407
-2021,Bangladesh,9693
-2011,Canada,6497
-2016,Canada,7523
-2021,Canada,8449
-2011,China,90901
-2016,China,155996
-2021,China,166023
-2011,Croatia,14698
-2016,Croatia,13194
-2021,Croatia,12902
-2011,Egypt,11948
-2016,Egypt,12679
-2021,Egypt,13312
-2011,Fiji,9043
-2016,Fiji,10091
-2021,Fiji,11450
-2011,Germany,21507
-2016,Germany,20207
-2021,Germany,19125
-2011,Greece,48312
-2016,Greece,45617
-2021,Greece,44956
-2011,Hong Kong,17591
-2016,Hong Kong,20839
-2021,Hong Kong,24428
 2011,India,106598
 2016,India,161079
 2021,India,242635
-2011,Indonesia,14707
-2016,Indonesia,16996
-2021,Indonesia,19294
-2011,Iran,6977
-2016,Iran,15730
-2021,Iran,20922
-2011,Iraq,12039
-2016,Iraq,17687
-2021,Iraq,25041
-2011,Ireland,12352
-2016,Ireland,13330
-2021,Ireland,14742
-2011,Italy,68822
-2016,Italy,63334
-2021,Italy,58081
-2011,South Korea,6256
-2016,South Korea,7871
-2021,South Korea,8476
-2011,Lebanon,15577
-2016,Lebanon,16389
-2021,Lebanon,18333
-2011,Malaysia,38029
-2016,Malaysia,47642
-2021,Malaysia,57345
-2011,Nepal,4106
-2016,Nepal,8879
-2021,Nepal,18510
-2011,Netherlands,13932
-2016,Netherlands,12621
-2021,Netherlands,11558
-2011,New Zealand,67045
-2016,New Zealand,78904
-2021,New Zealand,82939
-2011,Pakistan,8751
-2016,Pakistan,20032
-2021,Pakistan,29067
-2011,Philippines,33922
-2016,Philippines,45154
-2021,Philippines,58935
-2011,Poland,15061
-2016,Poland,13582
-2021,Poland,13052
-2011,Singapore,13045
-2016,Singapore,15355
-2021,Singapore,17087
-2011,South Africa,21816
-2016,South Africa,24167
-2021,South Africa,27056
-2011,Sri Lanka,42657
-2016,Sri Lanka,54032
-2021,Sri Lanka,65152
-2011,Taiwan,5334
-2016,Taiwan,8606
-2021,Taiwan,9362
-2011,Thailand,9517
-2016,Thailand,13909
-2021,Thailand,17360
+2011,China,90901
+2016,China,155996
+2021,China,166023
 2011,United Kingdom,165834
 2016,United Kingdom,162961
 2021,United Kingdom,161913
-2011,United States,14350
-2016,United States,16761
-2021,United States,20231
 2011,Vietnam,67037
 2016,Vietnam,79058
 2021,Vietnam,90552
+2011,New Zealand,67045
+2016,New Zealand,78904
+2021,New Zealand,82939
+2011,Sri Lanka,42657
+2016,Sri Lanka,54032
+2021,Sri Lanka,65152
+2011,Philippines,33922
+2016,Philippines,45154
+2021,Philippines,58935
+2011,Italy,68822
+2016,Italy,63334
+2021,Italy,58081
+2011,Malaysia,38029
+2016,Malaysia,47642
+2021,Malaysia,57345
+2011,Greece,48312
+2016,Greece,45617
+2021,Greece,44956
