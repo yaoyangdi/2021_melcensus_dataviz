@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.1.0.json",
     "title": {
-        "text": "Registered Cars in Portugal",
+        "text": "Rank of Country of Birth of Oversea residents",
         "color": "navy",
         "fontSize": 22,
         "align": "center",
