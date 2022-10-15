@@ -4,7 +4,7 @@ vegaEmbed("#bar_chart", vg_1).then(function(result) {
 }).catch(console.error);
 
 var vg_2 = "vg1.json";
-vegaEmbed("#vg1", vg_2).then(function(result){}).catch(console.error);
+vegaEmbed("#vg1", vg_2, {"actions": false}).then(function(result){}).catch(console.error);
 
 var vg_2 = "vg2.json";
-vegaEmbed("#vg2", vg_2).then(function(result){}).catch(console.error);
+vegaEmbed("#vg2", vg_2,  {"actions": false}).then(function(result){}).catch(console.error);
