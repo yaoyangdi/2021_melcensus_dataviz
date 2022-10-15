@@ -190,13 +190,13 @@
               "format": {"type": "csv"}
             },
             "mark": {"type": "text", "fontSize": 16, "align": "left", "dx": 0, 
-            "dy":-140,
+            "dy":-150,
             "color":"darkblue"},
             "transform": [
               {"filter": {"param": "select", "empty": true}},
               {"filter": "datum.ArrivalYear == 'before 1951'"},
               {"filter": "datum.Country == 'India'"},
-              {"calculate": "'Residents from India now has the most population; and most fast increasing trend nowadays'", "as": "raw"},
+              {"calculate": "'Residents from India living in Melbourne; are the most populous and fastest growing; residents today'", "as": "raw"},
               {"calculate": "split(datum.raw, ';')", "as": "coun"}
             ],
             "encoding": {
