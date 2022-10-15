@@ -189,17 +189,21 @@
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
               "format": {"type": "csv"}
             },
-            "mark": {"type": "text", "fontSize": 16, "align": "left", "dx": 0, 
-            "dy":-150,
+            "mark": {"type": "text", "fontSize": 16, "align": "left", "dx": -340, 
+            "dy":0,
             "color":"darkblue"},
             "transform": [
               {"filter": {"param": "select", "empty": true}},
-              {"filter": "datum.ArrivalYear == 'before 1951'"},
+              {"filter": "datum.ArrivalYear == '2011-2020'"},
               {"filter": "datum.Country == 'India'"},
               {"calculate": "'Residents from India living in Melbourne; are the most populous and fastest growing; residents today'", "as": "raw"},
               {"calculate": "split(datum.raw, ';')", "as": "coun"}
             ],
             "encoding": {
+              "tooltip":[
+                {"field":"ArrivalYear", "type": "ordinal"},
+                {"field":"Population", "type": "quantitative", "format":","}
+              ],
               "text": {"condition": {"param": "select", "field": "coun"}
             }
             }
