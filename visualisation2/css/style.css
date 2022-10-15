@@ -61,7 +61,7 @@ p{
     position: absolute;
     width: 450px;
     left: 780px;
-    top: 1100px;
+    top: 1120px;
 }
 
 
@@ -129,6 +129,21 @@ p{
 .Philippines_text{
     font-weight: bold;
     color:#8452bd
+}
+
+.NZ_text{
+    font-weight: bold;
+    color: #8ad6d0
+}
+
+.Italy_text {
+    font-weight: bold;
+    color: #c9c776;
+}
+
+.Greece_text{
+    font-weight:bold;
+    color: #edc948
 }
 
 .bold{

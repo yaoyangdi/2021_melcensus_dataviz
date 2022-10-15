@@ -71,7 +71,7 @@
                                   "bandPosition": 0, 
                                   "legend":null,
                                   "scale":{
-                                      "range": ["#4e79a7", "#edc948", "#f28e2b","#b07aa1", "#bab0ac", "#76b7b2", "#8452bd", "#9c755f", "#5aa24f", "#ff9da7"]
+                                      "range": ["#4e79a7", "#edc948", "#f28e2b","#c9c776", "#bab0ac", "#8ad6d0", "#8452bd", "#9c755f", "#5aa24f", "#ff9da7"]
                                   }
                               }
                           }
@@ -112,8 +112,8 @@
             "width": 420,
             "height": 170,
             "title":{
-                "text": "Population of Melbourne Residents From Oversea, 1951-2020",
-                "subtitle": "Population recorded based on arrival years",
+                "text": "Arrival Population of Melbourne Residents From Oversea, 1951-2020",
+                "subtitle": "Population recorded based on arrival years and CoB",
                 "subtitleColor":"gray",
                 "subtitleFontStyle":"italic",
                 "dy":-20
@@ -121,7 +121,7 @@
             "layer":[
                 {
                     "data":{
-                        "url": "data/ArrivalYear.CSV",
+                        "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
                         "format":{ "type": "csv" }
                       },
                     "mark": {"type": "line",
@@ -164,6 +164,36 @@
                             {"field":"Country", "type": "nominal"}
                         ]
                     }
+                },
+                {
+                    "data":{
+                        "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
+                        "format":{ "type": "csv" }
+                      },
+                    "mark": {"type": "text","fontSize":15, "align":"left","dx":-200, "dy":-70},
+                    "transform": [
+                        {
+                            "filter": {"param": "select"}
+                        },
+                        {
+                            "filter":"datum.Country == 'China' || datum.Country == 'India'"
+                        },
+                        {
+                            "calculate": "'Here would be the annotation filter by ;each country '+ datum.Country",
+                            "as": "raw"
+                        },
+
+                        {
+                            "calculate": "split(datum.raw, ';')",
+                            "as": "text_annotation"
+                        }
+                    ],
+                    "encoding": {
+                        "text":{
+                            "field":"text_annotation"
+                        }
+                    }
+
                 }
             ]
 
