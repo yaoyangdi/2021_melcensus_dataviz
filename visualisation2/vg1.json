@@ -9,7 +9,10 @@
             "transform": [{"filter": {"param": "select_area_interact"}}],
             "width": 400,
             "height": 250,
-            "title":"Population by gender",
+            "title": {
+              "text": "Population by gender",
+              "dy": -15
+            },
             "data": {
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Age_Gender.CSV",
               "format":{ "type": "csv" }
@@ -143,8 +146,12 @@
           },
           {
             "transform": [{"filter": {"param": "select"}}, {"filter":{"param": "select_area_interact"}}],
-            "title":"Population by age groups",
-            "width": 360,
+            "title":
+            {
+              "text": "Population by age groups",
+              "dy": -15
+            },
+            "width": 380,
             "height": 250,
             "data": {
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/Population_Total_By_Age_Gender.CSV",
@@ -200,7 +207,10 @@
         "projection": {
             "type": "equirectangular"
         },
-        "title": "Population in Different Melbourne Areas in 2021 Census",
+        "title": {
+          "text": "Population in Different Melbourne Areas in 2021 Census",
+          "dy": -15
+        },
         "layer": [
             {
               "data": {

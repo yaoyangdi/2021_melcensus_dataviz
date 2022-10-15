@@ -11,9 +11,9 @@
           "subtitle": "Rank based on population of the residents",
           "subtitleColor": "gray",
           "subtitleFontStyle": "italic",
-          "dy": 5
+          "dy": -10
         },
-        "width": 420,
+        "width": 380,
         "height": 300,
         "data": {
           "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/top10_CoB.CSV",
@@ -112,7 +112,7 @@
         ]
       },
       {
-        "width": 420,
+        "width": 380,
         "height": 170,
         "title": {
           "text": "Arrival Population of Melbourne Residents From Oversea, 1951-2020",
@@ -177,16 +177,38 @@
             "transform": [
               {"filter": {"param": "select", "empty": true}},
               {"filter": "datum.ArrivalYear == '2011-2020'"},
-              {"filter": "datum.Country == 'China' || datum.Country == 'India'"},
+              {"filter": "datum.Country == 'China' || datum.Country == 'India' || datum.Country =='New Zealand'"},
               {"calculate": "datum.Country", "as": "coun"}
             ],
             "encoding": {
               "text": {"condition": {"param": "select", "field": "coun"}}
             }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
+              "format": {"type": "csv"}
+            },
+            "mark": {"type": "text", "fontSize": 16, "align": "left", "dx": 0, 
+            "dy":-140,
+            "color":"darkblue"},
+            "transform": [
+              {"filter": {"param": "select", "empty": true}},
+              {"filter": "datum.ArrivalYear == 'before 1951'"},
+              {"filter": "datum.Country == 'India'"},
+              {"calculate": "'Residents from India now has the most population; and most fast increasing trend nowadays'", "as": "raw"},
+              {"calculate": "split(datum.raw, ';')", "as": "coun"}
+            ],
+            "encoding": {
+              "text": {"condition": {"param": "select", "field": "coun"}
+            }
+            }
           }
         ]
       }
     ],
-    "config": {"style": {"cell": {"stroke": "transparent"}}}
+    "config": {
+        "style": {"cell": {"stroke": "transparent"}}
+    }
   }
   
