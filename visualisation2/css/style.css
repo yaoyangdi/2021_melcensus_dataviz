@@ -77,12 +77,12 @@ p{
 
 /* Text decoration */
 .male_text{
-    color: orange;
+    color: #4e79a7;
     font-weight: bold;
 }
 
 .female_text{
-    color: #4e79a7;
+    color: orange;
     font-weight: bold;
 }
 
