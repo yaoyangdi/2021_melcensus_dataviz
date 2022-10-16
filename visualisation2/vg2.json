@@ -210,7 +210,9 @@
       }
     ],
     "config": {
-        "style": {"cell": {"stroke": "transparent"}}
+        "style": {"cell": {"stroke": "transparent"}},
+        "font": "Anton",
+        "title":{"fontSize":20}
     }
   }
   
