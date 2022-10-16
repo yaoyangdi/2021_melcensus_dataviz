@@ -190,6 +190,7 @@
               "format": {"type": "csv"}
             },
             "mark": {"type": "text", "fontSize": 16, "align": "left", "dx": -340, 
+            "tooltip":false,
             "dy":0,
             "color":"darkblue"},
             "transform": [
@@ -200,10 +201,7 @@
               {"calculate": "split(datum.raw, ';')", "as": "coun"}
             ],
             "encoding": {
-              "tooltip":[
-                {"field":"ArrivalYear", "type": "ordinal"},
-                {"field":"Population", "type": "quantitative", "format":","}
-              ],
+
               "text": {"condition": {"param": "select", "field": "coun"}
             }
             }

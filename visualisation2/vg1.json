@@ -33,7 +33,15 @@
                     "value": 0.3
                   },
                   "theta": {"aggregate":"sum", "field":"Population", "stack": "normalize"},
-                  "color": {"field": "Gender"},
+                  "color": {
+                    "field": "Gender",
+                    "scale":{
+                      "range":[
+                        "#f28e2b",
+                        "#4e79a7"
+                      ]
+                    }
+                  },
 
 
                   "strokeWidth": {
