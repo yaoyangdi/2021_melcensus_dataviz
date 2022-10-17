@@ -157,7 +157,7 @@
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
               "format": {"type": "csv"}
             },
-            "mark": {"type": "text", "fontSize": 14, "align": "left", "dx": -50, "dy":20, "font":"Bitter", "fontWeight":"bold"},
+            "mark": {"type": "text", "fontSize": 13, "align": "left", "dx": -50, "dy":20, "font":"Bitter", "fontWeight":"bold"},
             "transform": [
               {"filter": {"param": "select", "empty": false}},
               {"filter": "datum.Country == 'United Kingdom'"},
@@ -173,7 +173,7 @@
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
               "format": {"type": "csv"}
             },
-            "mark": {"type": "text", "fontSize": 14, "align": "left", "dx": -30, "dy":-20, "font":"Bitter", "fontWeight":"bold"},
+            "mark": {"type": "text", "fontSize": 13, "align": "left", "dx": -30, "dy":-20, "font":"Bitter", "fontWeight":"bold"},
             "transform": [
               {"filter": {"param": "select", "empty": false}},
               {"filter": "datum.Country == 'Vietnam' || datum.Country == 'Malaysia' || datum.Country == 'Italy' ||datum.Country == 'Philippines' || datum.Country == 'Sri Lanka' || datum.Country == 'New Zealand'  || datum.Country == 'China'"},
@@ -189,7 +189,7 @@
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
               "format": {"type": "csv"}
             },
-            "mark": {"type": "text", "fontSize": 14, "align": "left", "dx": 10, "font":"Bitter",
+            "mark": {"type": "text", "fontSize": 13, "align": "left", "dx": 10, "font":"Bitter",
             "fontWeight":"bold"},
             "transform": [
               {"filter": {"param": "select", "empty": true}},
@@ -206,7 +206,7 @@
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
               "format": {"type": "csv"}
             },
-            "mark": {"type": "text", "fontSize": 14, "align": "left", "dx": -340, 
+            "mark": {"type": "text", "fontSize": 13, "align": "left", "dx": -340, 
             "font":"Bitter",
             "fontWeight":"bold",
             "tooltip":false,
@@ -230,7 +230,7 @@
               "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/ArrivalYear.CSV",
               "format": {"type": "csv"}
             },
-            "mark": {"type": "text", "fontSize": 14, "align": "left", "dx": -340,
+            "mark": {"type": "text", "fontSize": 13, "align": "left", "dx": -340,
             "font":"Bitter",
             "fontWeight":"bold",
             "tooltip":false,
