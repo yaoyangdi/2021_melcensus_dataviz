@@ -203,7 +203,7 @@
         ]
       },
       {
-        "width": 375,
+        "width": 380,
         "height": 300,
         "data": {
             "url": "https://raw.githubusercontent.com/yaoyangdi/3179/main/visualisation2/data/SA4_2021_AUST_GDA2020.json",
@@ -216,7 +216,7 @@
             "type": "equirectangular"
         },
         "title": {
-          "text": "Population in Different Melbourne Areas in 2021 Census",
+          "text": ["Population in Different Melbourne Areas","in 2021 Census"],
           "dy": -15
         },
         "layer": [
@@ -286,10 +286,26 @@
                 }
             },
             {
-              "mark":{"type": "text", "text":"Melbourne CBD areas have", "color": "darkred","dx":-80, "dy":30,"fontSize":13}
+              "mark":{
+                "type": "text",
+                "text":"Melbourne Inner areas have",
+                "font":"Bitter",
+                "fontWeight":"bold",
+                "color": "#b71d3e",
+                "dx":-85, 
+                "dy":20,
+                "fontSize":13}
             },
             {
-              "mark":{"type": "text", "text":"the most dense population", "color": "darkred","dx":-80, "dy":45,"fontSize":13}
+              "mark":{
+                "type": "text",
+                "font":"Bitter",
+                "fontWeight":"bold", 
+                "text":"the most dense population", 
+                "color": "#b71d3e",
+                "dx":-89, 
+                "dy":35,
+                "fontSize":13}
             },
             {
               "data":{
@@ -329,7 +345,9 @@
         "cell": {
           "stroke": "transparent"
         }
-      }
+      },
+      "font": "Arial",
+      "title": {"fontSize": 16}
     }
   }
   
