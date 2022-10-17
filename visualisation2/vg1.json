@@ -292,9 +292,9 @@
                 "font":"Bitter",
                 "fontWeight":"bold",
                 "color": "#b71d3e",
-                "dx":-85, 
+                "dx":-79, 
                 "dy":20,
-                "fontSize":13}
+                "fontSize":14}
             },
             {
               "mark":{
@@ -303,9 +303,9 @@
                 "fontWeight":"bold", 
                 "text":"the most dense population", 
                 "color": "#b71d3e",
-                "dx":-89, 
+                "dx":-83, 
                 "dy":35,
-                "fontSize":13}
+                "fontSize":14}
             },
             {
               "data":{
@@ -347,7 +347,7 @@
         }
       },
       "font": "Arial",
-      "title": {"fontSize": 16}
+      "title": {"fontSize": 17}
     }
   }
   
