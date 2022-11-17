@@ -31,7 +31,7 @@ In terms of the creation process, letter writing, in-person visits, and online e
 The idiom on the top left is a donut chart, which is used to graphically show to viewers the comparison of group population between male and female in Melbourne areas. Using the donut chart also shows viewers the total number of residents in the central part of the chart.
 
 The idiom on the top right is a stacked bar chart. It is used for comparing the residential population of each age group. It also helps to compare each sub age group’s male to female ratio with the average one that is displayed on the donut chart.
-The choropleth map (Figure 1) is used because it can clearly present the range grading of different population density of regions in Melbourne in the form of colour. Instead of using proportional symbol map or dot map as the idiom, it avoids the overall visualisation not being less readable.
+The choropleth map (Figure 1) is used because it can clearly present the range grading of different population density of regions in Melbourne in the form of colour. Instead of using proportional symbol map or dot map as the idiom, it avoids the overall visualisation being less readable.
 
 ![img](https://lh4.googleusercontent.com/dBDIs6l3GXSeuo6imJv8s8c6ort6LyXGxtd0gtEoSmQnqzIjun0_-QCfLF4vXt9-5TeSEqHv6HeXOyirj03SM2yVbSVrKI2K-bHq4mjzavXpVKuLUZtJkYmw_Tsr-pYWhFiOAJvxqZ-K-UoeqrDTTUvJ6W5j5CZZmHrtRKFEdcCSGwO8fGkwFkoRqTZPog)
 <br>*figure 1: Choropleth map used for classification of different population density*
