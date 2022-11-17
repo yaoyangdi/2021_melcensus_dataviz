@@ -2,7 +2,7 @@
 
 URL: https://yaoyangdi.github.io/3179/visualisation2/
 
-Data resource: https://www.abs.gov.au/census/find-census-data/community-profiles/2021/2GMEL
+Data source: https://www.abs.gov.au/census/find-census-data/community-profiles/2021/2GMEL
 
 ## Introduction
 
